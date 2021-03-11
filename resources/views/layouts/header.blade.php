@@ -43,19 +43,19 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav flex-fill w-50 justify-content-end">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{{ URL::to('home') }}">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ URL::to('courses') }}">Courses</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="{{ URL::to('teacher') }}">Teacher</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Courses</a>
+          <a class="nav-link" href="{{ URL::to('blog') }}">Blog</a>
+        </li>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Teacher</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="{{ URL::to('about') }}">About</a>
         </li>
       </ul>
       <form class="form-inline my-2 flex-fill justify-content-end">
