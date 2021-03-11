@@ -16,21 +16,21 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/img/image_1.jpg" class="d-block w-100 mx-auto" alt="image_1" />
+        <img src="/img/image_1.jpg" class="d-block w-75 mx-auto" alt="image_1" />
         <div class="carousel-caption">
           <h5>First slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="/img/image_2.jpg" class="d-block w-100 mx-auto" alt="image_2" />
+        <img src="/img/image_2.jpg" class="d-block w-75 mx-auto" alt="image_2" />
         <div class="carousel-caption">
           <h5>Second slide label</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="/img/image_2.jpg" class="d-block w-100 mx-auto" alt="image_3" />
+        <img src="/img/image_2.jpg" class="d-block w-75 mx-auto" alt="image_3" />
         <div class="carousel-caption">
           <h5>Third slide label</h5>
           <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -163,7 +163,7 @@
 <!--====== APPLY PART START ======-->
 
 <section id="apply-aprt" class="pb-120">
-  <div class="container mt-5">
+  <div class="container mt-5 mb-5">
     <div class="apply">
       <div class="row ml-sm-3">
         <div class="col-12 col-md-6 col-lg-6">
