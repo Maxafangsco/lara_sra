@@ -37,3 +37,7 @@ Route::get('blog', function () {
 Route::get('courses', function () {
     return view('courses');
 }); 
+
+Route::get('contact', function () {
+    return view('contact');
+}); 

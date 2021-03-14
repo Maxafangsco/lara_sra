@@ -163,6 +163,13 @@
       margin-top: 50px;
       background-color: #07294d;
     }
+
+   /* courses page start */
+   .courses_left{
+    margin-bottom: 5px;
+     /* courses page start */
+}
+
   }
   /* Mobile devices end here */
   
@@ -462,7 +469,10 @@
       background-color: #07294d;
     }
     /* end footer style here */
-  }
+
+     /* courses page start */
+     /* courses page start */
+}
   /* iPads, Tablets end here */
   
   /* Small screens, laptops start here */
@@ -754,6 +764,13 @@
       background-color: #07294d;
     }
     /* end footer style here */
+
+ /* courses page start */
+
+     /* courses page start */
+
+
+
   }
   /* Small screens, laptops here here */
   
@@ -835,7 +852,7 @@
     }
   
     .navbar .navbar-nav li .sub-menu li {
-      margin-right: 0;
+      margin-right: 10%;
     }
     .navbar .navbar-nav li .sub-menu li a {
       padding: 10px 15px;
@@ -1046,6 +1063,12 @@
       background-color: #07294d;
     }
     /* end footer style here */
+
+     /* courses page start */
+ .courses_left{
+    margin-bottom: 5px;
+     /* courses page start */
+ }
   }
   /* Desktops, large screens end here */
   
@@ -1338,6 +1361,12 @@
       background-color: #07294d;
     }
     /* end footer style here */
+
+     /* courses page start */
+ .courses_left{
+    margin-bottom: 5px;
+     /* courses page start */
+ }
   }
   /*  larger screens end here */
   

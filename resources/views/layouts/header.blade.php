@@ -56,6 +56,10 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ URL::to('about') }}">About</a>
+          <ul class="sub-menu">
+                        <li><a href="{{ URL::to('about') }}">About</a></li>
+                        <li><a href="{{ URL::to('contact') }}">Contact</a></li>
+                      </ul>
         </li>
       </ul>
       <form class="form-inline my-2 flex-fill justify-content-end">
