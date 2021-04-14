@@ -10,4 +10,34 @@ class PageController extends Controller
 
         return view('index');
     }
+
+
+    public function about(){
+
+        return view('about');
+    }
+
+
+    public function blog(){
+
+        return view('blog');
+    }
+
+
+    public function contact(){
+
+        return view('contact');
+    }
+
+
+    public function courses(){
+
+        return view('courses');
+    }
+
+
+    public function teacher(){
+
+        return view('teacher');
+    }
 }

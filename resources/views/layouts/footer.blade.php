@@ -35,11 +35,6 @@
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
-
-                <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                  ><i class="fab fa-github"></i
-                ></a>
               </section>
               <!-- Section: Social media -->
 
@@ -95,7 +90,7 @@
                 <!--Grid row-->
                 <div class="row">
                   <!--Grid column-->
-                  <div class="col-3 mb-4 mb-md-0">
+                  <div class="col-4 mb-4 mb-md-0">
                     <h5 class="text-uppercase">site Map</h5>
 
                     <ul class="list-unstyled mb-0">
@@ -119,7 +114,7 @@
                   <!--Grid column-->
 
                   <!--Grid column-->
-                  <div class="col-3 mb-4 mb-md-0">
+                  <div class="col-4 mb-4 mb-md-0">
                     <h5 class="text-uppercase">Support</h5>
 
                     <ul class="list-unstyled mb-0">
@@ -139,29 +134,9 @@
                   </div>
                   <!--Grid column-->
 
-                  <!--Grid column-->
-                  <div class="col-3 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled mb-0">
-                      <li>
-                        <a href="#!" class="text-white">Link 1</a>
-                      </li>
-                      <li>
-                        <a href="#!" class="text-white">Link 2</a>
-                      </li>
-                      <li>
-                        <a href="#!" class="text-white">Link 3</a>
-                      </li>
-                      <li>
-                        <a href="#!" class="text-white">Link 4</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <!--Grid column-->
 
                   <!--Grid column-->
-                  <div class="col-3 mb-4 mb-md-0">
+                  <div class="col-4 mb-4 mb-md-0">
                     <h5 class="text-uppercase">Contact Us</h5>
 
                     <ul class="list-unstyled mb-0">

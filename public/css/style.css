@@ -493,6 +493,11 @@
     .top_head {
       background-color: #07294d;
     }
+
+  .news-scroll > a {
+    color: white;
+  }
+  
   
     .fa-map-marker-alt {
       color: #ffc600;
@@ -792,6 +797,11 @@
     .top_head {
       background-color: #07294d;
     }
+
+    .news-scroll > a {
+      color: white;
+    }
+  
   
     .fa-map-marker-alt {
       color: #ffc600;
@@ -1100,6 +1110,11 @@
     .top_head {
       background-color: #07294d;
     }
+
+    .news-scroll > a {
+      color: white;
+    }
+  
   
     .fa-map-marker-alt {
       color: #ffc600;
@@ -1392,4 +1407,3 @@
  }
   }
   /*  larger screens end here */
-  
