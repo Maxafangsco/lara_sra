@@ -1,17 +1,22 @@
-@extends('layouts.home') @section('content')
+@extends('layouts.app') @section('content')
 <link href="css/style.css" rel="stylesheet" />
 
 <link href="js/main.js" type="text/javascript" />
 
 
 
-   <div class="container-fluid bg-warning">
+   <div class="container-fluid">
        <div class="row">
-
-       <img class="img-fluid courses_img" src="#" alt="courses background image">
+            <div class="background_image">
+               <img class="bg-img" src="/img/blue-diamond-horizontal-background.jpeg" height="200px" width="100%">
+               <p>test courses</p>
+            </div>
            <h2 class="success"> Coureses</h2>
        </div>
    </div>
+
+
+  
 
  <div class="container ">
    <div class="row m-3">

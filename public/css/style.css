@@ -136,7 +136,12 @@
       text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
     }
     .carousel-indicators {
-      bottom: -40px;
+      bottom: 140px;
+    }
+    .carousel-caption {
+      position: absolute;
+      right: 15%;
+      bottom: 115px;
     }
     .carousel-indicators li,
     .carousel-indicators li.active {
@@ -192,7 +197,7 @@
   
     .fa-headset {
       color: #ffc600;
-      float: right;
+      /* float: right; */
     }
   
     .btnn {
@@ -233,11 +238,13 @@
     .navbar .navbar-nav > li > a:hover {
       color: #ffc600;
     }
+
+   
   
     .navbar .navbar-nav li .sub-menu {
       position: absolute;
       top: 110%;
-      left: 0;
+      /* left: 0; */
       background-color: #07294d;
       width: 200px;
       opacity: 0;
@@ -399,6 +406,12 @@
       overflow: hidden;
       min-height: 290px;
     }
+
+    /* .carousel-caption {
+      position: absolute;
+      right: 15%;
+      bottom: 30px;
+    } */
     .carousel .carousel-item .img-box {
       width: 135px;
       height: 135px;
@@ -492,7 +505,7 @@
   
     .fa-headset {
       color: #ffc600;
-      float: right;
+      /* float: right; */
     }
   
     .btnn {
@@ -537,7 +550,7 @@
     .navbar .navbar-nav li .sub-menu {
       position: absolute;
       top: 110%;
-      left: 0;
+      /* left: 0; */
       background-color: #07294d;
       width: 200px;
       opacity: 0;
@@ -791,7 +804,7 @@
   
     .fa-headset {
       color: #ffc600;
-      float: right;
+      /* float: right; */
     }
   
     .btnn {
@@ -832,11 +845,12 @@
     .navbar .navbar-nav > li > a:hover {
       color: #ffc600;
     }
+
   
     .navbar .navbar-nav li .sub-menu {
       position: absolute;
       top: 110%;
-      left: 0;
+      /* left: 0; */
       background-color: #07294d;
       width: 200px;
       opacity: 0;
@@ -1067,8 +1081,17 @@
      /* courses page start */
  .courses_left{
     margin-bottom: 5px;
-     /* courses page start */
+
  }
+     /* courses page start */
+
+     /* .background_image{
+         color: darkkhaki;
+        background-image: url('img/image_3.jpg');
+        width: 100%;
+        height: 20%;
+     } */
+    
   }
   /* Desktops, large screens end here */
   
@@ -1089,7 +1112,7 @@
   
     .fa-headset {
       color: #ffc600;
-      float: right;
+      /* float: right; */
     }
   
     .btnn {
@@ -1134,7 +1157,7 @@
     .navbar .navbar-nav li .sub-menu {
       position: absolute;
       top: 110%;
-      left: 0;
+      /* left: 0; */
       background-color: #07294d;
       width: 200px;
       opacity: 0;

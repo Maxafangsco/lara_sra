@@ -1,4 +1,4 @@
-@extends('layouts.home') @section('content')
+@extends('layouts.app') @section('content')
 <link href="css/contact.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
 

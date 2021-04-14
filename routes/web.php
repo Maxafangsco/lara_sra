@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,31 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 
-Route::get('home', function () {
-    return view('home');
-}); 
+Route::get('/',[PageController::class,'index']);
 
-Route::get('about', function () {
-    return view('about');
-}); 
 
-Route::get('teacher', function () {
-    return view('teacher');
-}); 
-
-Route::get('blog', function () {
-    return view('blog');
-}); 
-
-Route::get('courses', function () {
-    return view('courses');
-}); 
-
-Route::get('contact', function () {
-    return view('contact');
-}); 
+Route::get('about',[PageController::class,'index']);
+Route::get('blog',[PageController::class,'index']);
+Route::get('contact',[PageController::class,'index']);
+Route::get('courses',[PageController::class,'index']);
+Route::get('teacher',[PageController::class,'index']);
