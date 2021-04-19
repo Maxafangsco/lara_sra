@@ -83,12 +83,15 @@
                     <a class="nav-link" href="{{ URL::to('blog') }}">Blog</a>
                 </li>
 
-                <li class="nav-item mr-5">
+                <li class="nav-item mx-3">
                     <a class="nav-link" href="{{ URL::to('about') }}">About</a>
                     <ul class="sub-menu">
                         <li><a href="{{ URL::to('about') }}">About</a></li>
                         <li><a href="{{ URL::to('contact') }}">Contact</a></li>
                     </ul>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="{{route('albums.index')  }}">Dashboard</a>
                 </li>
             </ul>
             <form class="form-inline my-2  justify-content-end">
