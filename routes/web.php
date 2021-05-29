@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\AlbumController;
 
 /*
@@ -32,3 +33,14 @@ Route::resource('/albums', AlbumController::class);
 Route::post('albums/{album}/upload', [AlbumController::class, 'upload'])->name('ablums.upload');
 Route::get('/albums/{album}/image/{image}', [AlbumController::class, 'showImage'])->name('album.image.show');
 Route::delete('/albums/{album}/image/{image}', [AlbumController::class, 'destroyImage'])->name('album.image.destroy');
+
+// blog
+
+Route::get('/blog/blog',[PostController::class,'index'])->name('blog.blog');
+Route::get('post/{id}', [PostController::class,'show']);
+
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

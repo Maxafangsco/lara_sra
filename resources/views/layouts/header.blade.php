@@ -82,6 +82,9 @@
                 <li class="nav-item mx-3">
                     <a class="nav-link" href="{{ URL::to('blog') }}">Blog</a>
                 </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="blog/blog">Blog2</a>
+                </li>
 
                 <li class="nav-item mx-3">
                     <a class="nav-link" href="{{ URL::to('about') }}">About</a>
