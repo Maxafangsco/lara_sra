@@ -1,4 +1,4 @@
-@extends('dashboard')
+@extends('albums.dashboard')
 
 @section('content')
 <div>
