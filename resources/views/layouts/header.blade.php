@@ -79,11 +79,11 @@
                 <li class="nav-item mx-3">
                     <a class="nav-link" href="{{ URL::to('teacher') }}">Teacher</a>
                 </li>
-                <li class="nav-item mx-3">
+                {{-- <li class="nav-item mx-3">
                     <a class="nav-link" href="{{ URL::to('blog') }}">Blog</a>
-                </li>
+                </li> --}}
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="blog/blog">Blog2</a>
+                    <a class="nav-link" href="{{ route('blog') }}">Blog</a>
                 </li>
 
                 <li class="nav-item mx-3">
@@ -94,7 +94,7 @@
                     </ul>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="{{route('albums.index')  }}">Dashboard</a>
+                    <a class="nav-link" href="{{route('albums.index')}}">Multimedia</a>
                 </li>
             </ul>
             <form class="form-inline my-2  justify-content-end">

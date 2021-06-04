@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.app')
 
 @section('content')
 
@@ -16,7 +16,7 @@
                      
                         <h2>{{ $post->title }}</h2>
                         <div class="media">
-                            <div class="avatar">
+                            <div class="post_image">
                                 <img   class="img-fluid mx-auto d-block mb-2 float-md-left mr-md-4 img-thumbnail"  src="{{ url('storage/' .$post->image) }}" title="" alt="Responsive image">
                             </div>
                         </div>

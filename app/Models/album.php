@@ -2,32 +2,19 @@
 
 namespace App\Models;
 
-use Spatie\Image\Manipulations;
-use Spatie\MediaLibrary\HasMedia;
-use Illuminate\Database\Eloquent\Model;
-use Spatie\MediaLibrary\InteractsWithMedia;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Database\Eloquent\Model;
 
-class Album extends Model implements HasMedia
+class Album extends Model
 {
     use HasFactory;
-    use InteractsWithMedia;
-    protected $fillable=['title'];
 
-    public function registerMediaConversions(Media $media = null): void
-    {
-        $this->addMediaConversion('image')
-              ->width(200)
-              ->height(200)
-              ->sharpen(10)
-              ->withResponsiveImages();
+  protected $table = 'albums';
 
-        $this->addMediaConversion('thumb')
-              ->width(368)
-              ->height(232)
-              ->sharpen(10);
+  protected $fillable = ['name','description','cover_image'];
 
-      
-    }
+  public function Photos(){
+
+    return $this->hasMany(Image::class);
+  }
 }

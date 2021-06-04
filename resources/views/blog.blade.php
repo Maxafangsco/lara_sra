@@ -1,7 +1,4 @@
 @extends('layouts.app') @section('content')
-<link href="css/blog.css" rel="stylesheet" />
-
-<link href="js/main.js" type="text/javascript" />
 
 <!-- Blog code starts here -->
 
