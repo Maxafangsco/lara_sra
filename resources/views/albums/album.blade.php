@@ -1,39 +1,30 @@
   @extends('layouts.app') 
   @section('content')
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <button type="button" class="navbar-toggle"data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">Awesome Albums</a>
-        <div class="nav-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="{{URL::route('create_album_form')}}">Create New Album</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-     </div>
-    </div>
     <div class="container">
     
       <div class="starter-template">
         <div class="media">
-          <img class="media-object pull-left"alt="{{$album->name}}" src="{{asset( 'storage/' .$album->cover_image)}}" width="350px">
-          <div class="media-body">
-            <h2 class="media-heading" style="font-size: 26px;">Album Name:</h2>
-            <p>{{$album->name}}</p>
-          <div class="media">
-          <h2 class="media-heading" style="font-size: 26px;">AlbumDescription :</h2>
-          <p>{{$album->description}}<p>
-          {{-- <a href="{{route('add_image',$album->id)}}"><button type="button"class="btn btn-primary btn-large">Add New Image to Album</button></a>
-          <a href="{{route('delete_album',$album->id)}}" onclick="return confirm('Are yousure?')"><button type="button"class="btn btn-danger btn-large">Delete Album</button></a> --}}
-        </div>
-      </div>
+          <img class="media-object pull-left"alt="{{$album->name}}" src="{{asset( 'storage/' .$album->cover_image)}} " width="50" height="50>
+           <div class="container">
+            <div class="media-body">
+              <div class="row">
+                <div class="col">
+                    <h4 class="media_heading">Album Name:</h4>
+                    <p>{{$album->name}}</p>
+                </div>
+                <div class="row">
+                  <div class="media">
+                    <h4 class="media_heading">AlbumDescription :</h4>
+                    <p>{{$album->description}}<p>
+                    </div>
+                </div>
+              </div>
+            </div>
+           </div>
     </div>
     </div>
-      <div class="row">
+      <div class="row mt-5 ">
         @foreach($album->Photos as $photo)
           <div class="col-lg-3">
             <div class="thumbnail" style="max-height: 350px;min-height: 350px;">

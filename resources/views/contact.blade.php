@@ -2,7 +2,7 @@
 
  
 <div class="row" id="contatti">
-<div class="container mt-5" >
+<div class="container_contact mt-5" >
 
     <div class="row">
       <div class="col-md-6 maps mt-5" >
