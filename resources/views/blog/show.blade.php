@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
 <!-- Blog code starts here -->
 
 <div class="blog-single gray-bg">
@@ -10,26 +9,23 @@
             <div class="col-lg-8 m-15px-tb">
                 <article class="article">
                     <div class="article-img">
-                        <img src="img/image_2.jpg" title="" alt="">
+                        <img src="img/image_2.jpg" title="" alt="" />
                     </div>
                     <div class="article-title">
-                     
                         <h2>{{ $post->title }}</h2>
                         <div class="media">
                             <div class="post_image">
-                                <img   class="img-fluid mx-auto d-block mb-2 float-md-left mr-md-4 img-thumbnail"  src="{{ url('storage/' .$post->image) }}" title="" alt="Responsive image">
+                                <img class="img-fluid mx-auto d-block mb-2 float-md-left mr-md-4 img-thumbnail" src="{{ url('storage/' .$post->image) }}" title="" alt="Responsive image" />
                             </div>
                         </div>
                         <div class="media-body">
-                               
-                            Posted by  {{$post->authorId->name}} on {{$post->created_at->format('M d Y')}}
-                          
+                            Posted by {{$post->authorId->name}} on {{$post->created_at->format('M d Y')}}
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-center  m-3"> <h3>{{ $post->excerpt }}</h3></div>
+                    <div class="d-flex justify-content-center m-3"><h3>{{ $post->excerpt }}</h3></div>
                     <div class="article-content m-5">
-                          {!! $post->body !!}
+                        {!! $post->body !!}
                     </div>
                 </article>
                 <div class="contact-form article-comment">
@@ -38,12 +34,12 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input name="Name" id="name" placeholder="Name *" class="form-control" type="text">
+                                    <input name="Name" id="name" placeholder="Name *" class="form-control" type="text" />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input name="Email" id="email" placeholder="Email *" class="form-control" type="email">
+                                    <input name="Email" id="email" placeholder="Email *" class="form-control" type="email" />
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -68,14 +64,14 @@
                     </div>
                     <div class="widget-body">
                         <div class="media align-items-center">
-                             <div class="avatar">
-                                <img   class="img-fluid mx-auto d-block mb-2 float-md-left mr-md-4 img-thumbnail"  src="{{ url('storage/' .$post->authorId->avatar) }}" title="" alt="Responsive image">
+                            <div class="avatar">
+                                <img class="img-fluid mx-auto d-block mb-2 float-md-left mr-md-4 img-thumbnail" src="{{ url('storage/' .$post->authorId->avatar) }}" title="" alt="Responsive image" />
                             </div>
                         </div>
                         <div class="media-body">
-                            <h6>Hello, I'm  {{$post->authorId->name}} </h6>
+                            <h6>Hello, I'm {{$post->authorId->name}}</h6>
                         </div>
-                        <p> {{$post->authorId->about}}</p>
+                        <p>{{$post->authorId->about}}</p>
                     </div>
                 </div>
                 <!-- End Author -->
@@ -84,9 +80,7 @@
                     <div class="widget-title">
                         <h3>Trending Now</h3>
                     </div>
-                    <div class="widget-body">
-
-                    </div>
+                    <div class="widget-body"></div>
                 </div>
                 <!-- End Trending Post -->
                 <!-- Latest Post -->
@@ -94,33 +88,32 @@
                     <div class="widget-title">
                         <h3>Latest Post</h3>
                     </div>
-                   {{-- @foreach($posts as $post) --}}
+                    {{-- @foreach($posts as $post) --}}
 
-                   <div class="widget-body">
-                    <div class="latest-post-aside media">
-                        <div class="lpa-left media-body">
-                            <div class="lpa-title">
-                                <h5><a href="#">{{ $post->title }}</a></h5>
+                    <div class="widget-body">
+                        <div class="latest-post-aside media">
+                            <div class="lpa-left media-body">
+                                <div class="lpa-title">
+                                    <h5><a href="#">{{ $post->title }}</a></h5>
+                                </div>
+                                <div class="lpa-meta">
+                                    <a class="name" href="#">
+                                        {{$post->authorId->name}}
+                                    </a>
+                                    <a class="date" href="#">
+                                        {{$post->created_at->format('M d Y')}}
+                                    </a>
+                                </div>
                             </div>
-                            <div class="lpa-meta">
-                                <a class="name" href="#">
-                                    {{$post->authorId->name}}
-                                </a>
-                                <a class="date" href="#">
-                                    {{$post->created_at->format('M d Y')}}
+                            <div class="lpa-right">
+                                <a href="#">
+                                    <img src="{{ url('storage/' .$post->image) }}" width="200" height="100" />
                                 </a>
                             </div>
-                        </div>
-                        <div class="lpa-right">
-                            <a href="#">
-                                <img src="{{ url('storage/' .$post->image) }}"  width="200" height="100" />
-                            </a>
                         </div>
                     </div>
-                  
-                </div>
-                       
-                   {{-- @endforeach --}}
+
+                    {{-- @endforeach --}}
                 </div>
                 <!-- End Latest Post -->
                 <!-- widget Tags -->
@@ -147,5 +140,5 @@
 </div>
 
 <!-- Blog code ends here -->
-    
+
 @endsection
