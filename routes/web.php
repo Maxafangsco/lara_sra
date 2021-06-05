@@ -53,7 +53,8 @@ Route::post('/moveimage',  [ImageController::class,'postMove']);
 // blog
 
 Route::get('/blog',[PostController::class,'index'])->name('blog');
-Route::get('post/{id}', [PostController::class,'show']);
+Route::get('post/{id}', [PostController::class,'show'])->name('show_post');
+Route::post('comment/{id}',[PostController::class,'comment'])->name('post_comment');
 
 
 

@@ -10,24 +10,25 @@
 
           <div class="row">
               @foreach ($posts as $post)
-              <div class="col-lg-4 col-md-12 mb-4">
-                  <div class="card">
-                      <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                          <img src="{{ url('storage/' .$post->image) }}" class="img-fluid" />
-                          <a href="#!">
-                              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                          </a>
-                      </div>
-                      <div class="card-body">
-                          <h5 class="card-title">{{ $post->title }}</h5>
-                          <p class="card-text">
-                              {!! Str::limit($post->body, 150) !!}
-                          </p>
-                          <a href="/post/{{ $post->id }}" class="btn btn-primary">Read</a>
-                      </div>
-                  </div>
-              </div>
-
+             <a href="{{route('show_post',$post->id)}}">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="{{ url('storage/' .$post->image) }}" class="img-fluid" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">{{ $post->title }}</h5>
+                            <p class="card-text">
+                                {!! Str::limit($post->body, 150) !!}
+                            </p>
+                            <a href="{{ route('show_post',$post->id )}}" class="btn btn-primary">Read</a>
+                        </div>
+                    </div>
+                </div>
+             </a>
               @endforeach
           </div>
       </section>

@@ -28,32 +28,25 @@
                         {!! $post->body !!}
                     </div>
                 </article>
-                <div class="contact-form article-comment">
-                    <h4>Leave a Reply</h4>
-                    <form id="contact-form" method="POST">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input name="Name" id="name" placeholder="Name *" class="form-control" type="text" />
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input name="Email" id="email" placeholder="Email *" class="form-control" type="email" />
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <textarea name="message" id="message" placeholder="Your message *" rows="4" class="form-control"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="send">
-                                    <button class="px-btn theme"><span>Submit</span> <i class="arrow"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+
+                <div class="contact-form article-comment m-5">
+                    <h4>Comments</h4>
+                    <div id="disqus_thread"></div>
+                    <script>
+                  
+                        var disqus_config = function () {
+                        this.page.url = '{{Request::url() }}';
+                        this.page.identifier ='{{ $post->id }}';
+                        };
+                     
+                        (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://sra-cm-com.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                 </div>
             </div>
             <div class="col-lg-4 m-15px-tb blog-aside">
@@ -88,32 +81,34 @@
                     <div class="widget-title">
                         <h3>Latest Post</h3>
                     </div>
-                    {{-- @foreach($posts as $post) --}}
-
+                    @foreach($recents as $recent)
+                 
                     <div class="widget-body">
                         <div class="latest-post-aside media">
+                            <a href="{{route('show_post',$post->id)}}">
                             <div class="lpa-left media-body">
                                 <div class="lpa-title">
-                                    <h5><a href="#">{{ $post->title }}</a></h5>
+                                    <h5><a href="#">{{ $recent->title }}</a></h5>
                                 </div>
                                 <div class="lpa-meta">
                                     <a class="name" href="#">
-                                        {{$post->authorId->name}}
+                                        {{$recent->authorId->name}}
                                     </a>
                                     <a class="date" href="#">
-                                        {{$post->created_at->format('M d Y')}}
+                                        {{$recent->created_at->format('M d Y')}}
                                     </a>
                                 </div>
                             </div>
                             <div class="lpa-right">
                                 <a href="#">
-                                    <img src="{{ url('storage/' .$post->image) }}" width="200" height="100" />
+                                    <img src="{{ url('storage/' .$recent->image) }}" width="200" height="100" />
                                 </a>
                             </div>
+                        </a>
                         </div>
                     </div>
-
-                    {{-- @endforeach --}}
+              
+                    @endforeach
                 </div>
                 <!-- End Latest Post -->
                 <!-- widget Tags -->

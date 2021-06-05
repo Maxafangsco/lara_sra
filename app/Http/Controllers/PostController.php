@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\comment;
 use Illuminate\Http\Request;
 use  TCG\Voyager\Models\Post;
 use TCG\Voyager\Contracts\User;
@@ -10,7 +11,7 @@ use TCG\Voyager\Contracts\User;
 class PostController extends Controller
 {
     public function index(){
-        $posts = Post::orderBy('created_at','desc')->paginate(6);
+        $posts = Post::orderBy('created_at','desc')->latest()->paginate(6);
 
         return view('blog.blog',compact('posts'));
     }
@@ -19,9 +20,29 @@ class PostController extends Controller
 
         // $post = Post::where('id', '=', $id)->firstOrFail();
         $post = Post::where('id', $id)->firstOrFail();
-        // $user = User::select('id', $post->author_id);
-        // dd($post);
-        return view('blog.show', compact('post'));
+        $recents = Post::latest()->take(4)->get();
+        return view('blog.show', compact('post','recents'));
+    }
+
+    public function comment(Request $request)
+    {
+     $request->validate([
+         'name'=>'required',
+         'email'=>'required',
+         'body'=>'required',
+     ]);
+      
+     $name=$request->name;
+     $email=$request->email;
+     $body=$request->body;
+
+     $comments = new Comment;
+     $comments->name = $name;
+     $comments->email = $email;
+     $comments->body = $body;
+     $comments->save();
+
+     return back();
     }
 
     }
