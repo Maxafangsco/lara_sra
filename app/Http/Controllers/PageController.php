@@ -2,13 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Album;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PageController extends Controller
 {
     public function index(){
-
-        return view('index');
+        $mentors = DB::table('albums')
+        ->join('images','albums.id','=','images.album_id')
+        ->select('images.*')
+        ->where('albums.name','=','mentors')
+        ->get();
+return view('index',['mentors'=> $mentors]);
     }
 
 
@@ -38,7 +44,13 @@ class PageController extends Controller
 
     public function teacher(){
 
-        return view('teacher');
+
+        $mentors = DB::table('albums')
+                   ->join('images','albums.id','=','images.album_id')
+                   ->select('images.*')
+                   ->where('albums.name','=','mentors')
+                   ->get();
+        return view('teacher',['mentors'=> $mentors]);
     }
 
     

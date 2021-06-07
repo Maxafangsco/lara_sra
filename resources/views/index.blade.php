@@ -219,54 +219,19 @@
     <div class="col-lg-6 offset-lg-1 mt-4">
       <div class="teachers mt-20">
         <div class="row">
-          <div class="col-sm-6">
-            <div class="singel-teachers mt-30 text-center">
-              <div class="image">
-                <img src="/img//teachers/t-1.jpg" alt="Teachers" />
-              </div>
-              <div class="cont">
-                <a href="teachers-singel.html"><h6>Mark alen</h6></a>
-                <span>Vice chencelor</span>
-              </div>
-            </div>
-            <!-- singel teachers -->
-          </div>
-          <div class="col-sm-6">
-            <div class="singel-teachers mt-30 text-center">
-              <div class="image">
-                <img src="/img//teachers/t-2.jpg" alt="Teachers" />
-              </div>
-              <div class="cont">
-                <a href="teachers-singel.html"><h6>David card</h6></a>
-                <span>Pro chencelor</span>
-              </div>
-            </div>
-            <!-- singel teachers -->
-          </div>
-          <div class="col-sm-6">
-            <div class="singel-teachers mt-30 text-center">
-              <div class="image">
-                <img src="/img//teachers/t-3.jpg" alt="Teachers" />
-              </div>
-              <div class="cont">
-                <a href="teachers-singel.html"><h6>Rebeka alig</h6></a>
-                <span>Pro chencelor</span>
-              </div>
-            </div>
-            <!-- singel teachers -->
-          </div>
-          <div class="col-sm-6">
-            <div class="singel-teachers mt-30 text-center">
-              <div class="image">
-                <img src="/img/teachers/t-4.jpg" alt="Teachers" />
-              </div>
-              <div class="cont">
-                <a href="teachers-singel.html"><h6>Hanna bein</h6></a>
-                <span>Aerobics head</span>
-              </div>
-            </div>
-            <!-- singel teachers -->
-          </div>
+          @foreach ($mentors as $mentor)
+          <div class=" col-sm-6 col-md-3">
+          <div class="singel-teachers mt-30 text-center">
+           <div class="image ">
+             <img src="{{asset( 'storage/' .$mentor->image)}}" alt="Teachers" />
+           </div>
+           <div class="cont">
+             <a href="teachers-singel.html"><h6>{{ $mentor->description }}</h6></a>
+             <span>{{ $mentor->name }}</span>
+           </div>
+         </div>
+       </div>
+          @endforeach
         </div>
         <!-- row -->
       </div>
