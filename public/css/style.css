@@ -1,7 +1,8 @@
 /* Mobile devices start here */
 @media (max-width: 480px) {
     .top_head {
-      display: none;
+      visibility:hidden;
+      display: none !important;
     }
   
     .navbar-brand {
@@ -1106,6 +1107,7 @@
   /* Desktops, large screens end here */
   
   /* larger screens start here */
+
   @media (min-width: 1201px) {
     .top_head {
       background-color: #07294d;
@@ -1211,6 +1213,9 @@
     }
     /* end card section */
   
+    .about-cont{
+      padding-top: 50px;
+    }
     /* start upcoming event section  */
   
     .event_right {
@@ -1406,4 +1411,5 @@
      /* courses page start */
  }
   }
+  
   /*  larger screens end here */

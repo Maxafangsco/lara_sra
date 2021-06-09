@@ -1,7 +1,3 @@
-<link href="css/style.css" rel="stylesheet" />
-
-<link href="js/main.js" type="text/javascript" />
-
 <!-- start top container-->
 
 <div class="container-fluid d-flex top_head">
@@ -55,7 +51,6 @@
         </div>
     </div>
 </div>
-
 <!-- end top container-->
 
 <!-- start Nav-->
@@ -74,10 +69,16 @@
                 </li>
 
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="{{ URL::to('courses') }}">Courses</a>
+                    <a class="nav-link" href="{{ URL::to('courses') }}">Features</a>
+                    <ul class="sub-menu">
+                        <li><a href="{{ route('sra') }}">SRA</a></li>
+                        <li><a href="{{ route('sra_hub') }}">SRA HUB</a></li>
+                        <li><a href="{{ route('sra_services') }}">SRA Services</a></li>
+                        <li><a href="{{ route('sra_research') }}">SRA Reseach Community</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="{{ URL::to('teacher') }}">Teacher</a>
+                    <a class="nav-link" href="{{ URL::to('teacher') }}">Mentors</a>
                 </li>
                 {{-- <li class="nav-item mx-3">
                     <a class="nav-link" href="{{ URL::to('blog') }}">Blog</a>

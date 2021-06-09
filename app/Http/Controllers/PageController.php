@@ -18,6 +18,26 @@ return view('index',['mentors'=> $mentors]);
     }
 
 
+    public function sra(){
+
+        return view('sra');
+    }
+
+    public function sra_services(){
+
+        return view('sra_services');
+    }
+
+    public function sra_hub(){
+
+        return view('sra_hub');
+    }
+
+    public function sra_research(){
+
+        return view('sra_research_community');
+    }
+
     public function about(){
 
         return view('about');

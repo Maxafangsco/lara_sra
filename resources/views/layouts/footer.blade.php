@@ -1,9 +1,3 @@
-
-<link href="css/style.css" rel="stylesheet" />
-
-<link href="js/main.js" type="text/javascript" />
-
-
 <!-- start footer here -->
           <!-- Footer -->
           <footer class=" text-center text-white footer_body">

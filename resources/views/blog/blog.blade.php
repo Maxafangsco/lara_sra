@@ -22,7 +22,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $post->title }}</h5>
                             <p class="card-text">
-                                {!! Str::limit($post->body, 150) !!}
+                                {!! Str::limit($post->body, 200) !!}
                             </p>
                             <a href="{{ route('show_post',$post->id )}}" class="btn btn-primary">Read</a>
                         </div>

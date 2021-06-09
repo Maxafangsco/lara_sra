@@ -29,6 +29,13 @@ Route::get('contact',[PageController::class,'contact']);
 Route::get('courses',[PageController::class,'courses']);
 Route::get('teacher',[PageController::class,'teacher']);
 
+//sra pages
+Route::get('sra',[PageController::class,'sra'])->name('sra');
+Route::get('services',[PageController::class,'sra_services'])->name('sra_services');
+Route::get('hub',[PageController::class,'sra_hub'])->name('sra_hub');
+Route::get('research',[PageController::class,'sra_research'])->name('sra_research');
+
+
 
 
 // Album and Images 

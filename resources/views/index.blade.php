@@ -53,9 +53,9 @@
       <div class="card">
         <img class="card-img-top mx-auto d-block" src="/img/icon/infographic.png" alt="Card image cap" />
         <div class="card-body">
-          <h5 class="card-title">Research</h5>
+          <h5 class="card-title">SRA Training</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Read more</a>
+          <a href="{{ route('sra') }}" class="btn btn-primary">Read more</a>
         </div>
       </div>
     </div>
@@ -63,9 +63,9 @@
       <div class="card">
         <img class="card-img-top mx-auto d-block" src="/img/icon/image_1.png" alt="Card image cap" />
         <div class="card-body">
-          <h5 class="card-title">Research</h5>
+          <h5 class="card-title">SRA HUB</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Read more</a>
+          <a href="{{ route('sra_hub') }}" class="btn btn-primary">Read more</a>
         </div>
       </div>
     </div>
@@ -73,9 +73,9 @@
       <div class="card">
         <img class="card-img-top mx-auto d-block" src="/img/icon/infographic.png" alt="Card image cap" />
         <div class="card-body">
-          <h5 class="card-title">Research</h5>
+          <h5 class="card-title">SRA Services</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Read more</a>
+          <a href="{{ route('sra_services') }}" class="btn btn-primary">Read more</a>
         </div>
       </div>
     </div>
@@ -84,9 +84,9 @@
       <div class="card">
         <img class="card-img-top mx-auto d-block" src="/img/icon/mentoship.png" alt="Card image cap" />
         <div class="card-body">
-          <h5 class="card-title">Research</h5>
+          <h5 class="card-title">SRA Reseach Community</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Read more</a>
+          <a href="{{ route('sra_research') }}" class="btn btn-primary">Read more</a>
         </div>
       </div>
     </div>

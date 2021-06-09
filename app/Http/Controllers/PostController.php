@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\comment;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use  TCG\Voyager\Models\Post;
 use TCG\Voyager\Contracts\User;
